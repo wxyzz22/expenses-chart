@@ -1,38 +1,139 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(27, 66%, 92%);
+  font-size: 18px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.strong {
+  font-weight: 700;
+}
+
+.light {
+  font-weight: 400;
+}
+
+.tiny {
+  font-size: 14px;
+}
+
+.small {
+  font-size: 18px;
+}
+
+.med {
+  font-size: 24px;
+}
+
+.large {
+  font-size: 40px;
+}
+
+.brown {
+  color:hsl(25, 47%, 15%)
+}
+
+.light-brown {
+  color:hsl(28, 10%, 53%)
+}
+
+.white {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.wrapper {
+  background-color: hsl(27, 66%, 92%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bar-chart {
+  padding: 20px;
+}
+
+.header {
+  background-color: hsl(10, 79%, 65%);
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 30px 20px 30px;
+  border-radius: 20px;
+}
+
+.white-bg {
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 20px 27px;
+}
+
+.bar-chart-title {
+  padding-bottom: 40px;
+}
+
+.bar-amount {
+  position: absolute;
+  height: 30px;
+  width: 54px;
+  max-width: 54px;
+  padding: 5px 5px;
+  text-align: center;
+  transform: translateY(-120%) translateX(-10%);
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 5px;
+}
+
+.bar-and-text {
+  position: relative;
+  display: inline-block;
+  margin: 7px;
+}
+
+.bar {
+  height: 100px;
+  width: 40px;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.bar-text-day {
+  text-align: center;
+  margin: auto;
+  padding-top: 2px;
+}
+
+hr {
+  width: 87%;
+  background-color: hsl(27, 66%, 92%);
+  border: 1px solid hsl(27, 66%, 92%);
+}
+
+.total-this-month {
+  margin-bottom: 7px;
+}
+
+.number-total {
+  line-height: 1.1;
+}
+
+.right-text {
+  text-align: right;
+}
+
+
+.attribution {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
 }
